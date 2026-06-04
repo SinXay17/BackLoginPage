@@ -1,0 +1,6 @@
+ts-backend/node_modules/
+
+ts-backend/.env
+
+.DS_Store
+Thumbs.db

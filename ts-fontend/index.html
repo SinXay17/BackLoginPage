@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="c.css">
+    <title>ລົງທະບຽນ ແລະ ເຂົ້າສູ່ລະບົບ</title>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div id="login-form">
+            <h2>ເຂົ້າສູ່ລະບົບ</h2>
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="login-email">ອີເມວ</label>
+                    <input type="email" id="login-email" required placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">ລະຫັດຜ່ານ</label>
+                    <input type="password" id="login-password" required placeholder="Password">
+                </div>
+                <button type="submit">ເຂົ້າສູ່ລະບົບ</button>
+            </form>
+            <div class="toggle-text">
+                ຍັງບໍ່ມີບັນຊີເທື່ອບໍ? <a onclick="toggleForm('register')">ລົງທະບຽນ</a>
+            </div>
+        </div>
+
+        <div id="register-form" class="hidden">
+            <h2>ລົງທະບຽນ</h2>
+            <form onsubmit="handleRegister(event)">
+                <div class="form-group">
+                    <label for="reg-username">ຊື່ຜູ້ໃຊ້</label>
+                    <input type="text" id="reg-username" required placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">ອີເມວ</label>
+                    <input type="email" id="reg-email" required placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">ລະຫັດຜ່ານ</label>
+                    <input type="password" id="reg-password" required placeholder="Password">
+                </div>
+                <button type="submit">ລົງທະບຽນ</button>
+            </form>
+            <div class="toggle-text">
+                ມີບັນຊີແລ້ວບໍ? <a onclick="toggleForm('login')">ເຂົ້າສູ່ລະບົບ</a>
+            </div>
+        </div>
+    </div> 
+    <script src="src/app.js"></script>
+
+</body>
+</html>
